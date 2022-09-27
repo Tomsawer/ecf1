@@ -54,6 +54,7 @@ nav-icon {
     position: relative;
 }
 
+/* animation soulignage actif au passage de la souris */
 .navlinks-container a::after {
     content: "";
     display: block;
@@ -67,8 +68,36 @@ nav-icon {
     transition: transform 0.3s ease-out;
 }
 
+/* suite apres le passage de souris */
 .navlinks-container a:hover::after {
     transform: scaleX(1);
+}
+
+.nav-authentication {
+    margin-left: auto;
+}
+
+/* creation design bouton */
+.signs-btns button {
+    font-family: Arial flex, Helvetica, sans-serif;
+    font-size: 16px;
+    min-width: 90px;
+    padding: 10px 5px;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+}
+
+/* transparence du btn */
+.signs-btns button:nth-child(2) {
+    border: none;
+    background: rgba(146, 195, 238, 0.718);
+}
+
+.user-toggler {
+    display: none
 }
 
 img {
